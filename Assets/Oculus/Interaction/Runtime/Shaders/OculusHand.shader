@@ -26,7 +26,7 @@ Shader "Interaction/OculusHand"
         [Header(Outline)]
         _OutlineColor("Outline Color", Color) = (0.5377358,0.5377358,0.5377358,1)
         _OutlineJointColor("Outline Joint Error Color", Color) = (1,0,0,1)
-        _OutlineWidth("Outline Width", Range(0 , 0.01)) = 0.00134
+        _OutlineWidth("Outline Width", Range(0 , .05)) = 0.00134
         _OutlineOpacity("Outline Opacity", Range(0 , 1)) = 0.4
 
         [Header(Wrist)]
