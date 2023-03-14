@@ -156,6 +156,53 @@ Transform:
   m_Father: {fileID: 1949505232}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &117414548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 117414550}
+  - component: {fileID: 117414549}
+  m_Layer: 0
+  m_Name: AvatarMagicManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &117414549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117414548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d319d788a887b3f4e870e58a24f3374a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 1307850510}
+  _magicParticles: {fileID: 1462481968056840746, guid: 278e7d59ae543b140934c21a6518b3fd, type: 3}
+  _camera: {fileID: 1873691680}
+--- !u!4 &117414550
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117414548}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.028495342, y: 0.22990513, z: 5.3750477}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &151629554
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1832,6 +1879,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BasicGesturesSwipeAudio
       objectReference: {fileID: 0}
+    - target: {fileID: 7410389675181900697, guid: 87f21855284871e4aa142d376bd8f2ab, type: 3}
+      propertyPath: _volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410389675181900697, guid: 87f21855284871e4aa142d376bd8f2ab, type: 3}
+      propertyPath: _audioClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 86b37903b454fe94db8b14428ceb6075, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87f21855284871e4aa142d376bd8f2ab, type: 3}
 --- !u!4 &1062799283 stripped
@@ -2055,6 +2110,17 @@ Transform:
   m_Father: {fileID: 1461241294}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1307850510 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114501696213753918, guid: fca9d4afb3743274e8f7da14019d7e0b, type: 3}
+  m_PrefabInstance: {fileID: 1135022891}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1424795628, guid: ebae63e7edba59945a994528ada1f7a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1327113874
 GameObject:
   m_ObjectHideFlags: 0
@@ -2456,6 +2522,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1062799284}
         m_TargetAssemblyTypeName: Oculus.Interaction.AudioTrigger, Oculus.Interaction.Samples
         m_MethodName: PlayAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 117414549}
+        m_TargetAssemblyTypeName: ChangeAvatar, Assembly-CSharp
+        m_MethodName: magicSpawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
