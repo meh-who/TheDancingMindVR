@@ -459,6 +459,7 @@ GameObject:
   - component: {fileID: 8453960318313912871}
   - component: {fileID: 8453960318313912870}
   - component: {fileID: 8453960318313912869}
+  - component: {fileID: 248451415615876381}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -549,6 +550,20 @@ MonoBehaviour:
   _syncScale: 0
   _syncVelocity: 1
   _maintainOwnershipWhileSleeping: 0
+--- !u!114 &248451415615876381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8453960318313912867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b58008eece22a04382ee4d041df0ed4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _voice: {fileID: 8453960318313912871}
+  intensity: 0
 --- !u!1 &8453960318451754631
 GameObject:
   m_ObjectHideFlags: 0

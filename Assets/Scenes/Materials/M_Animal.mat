@@ -42,7 +42,7 @@ Material:
     - _Cull: 2
     - _DstBlend: 0
     - _Erode: 0
-    - _FresnelPower: 0.83
+    - _FresnelPower: 2.63
     - _QueueControl: 0
     - _QueueOffset: 0
     - _SrcBlend: 1
@@ -51,7 +51,7 @@ Material:
     - _ZWrite: 1
     - _ZWriteControl: 0
     m_Colors:
-    - _Color: {r: 3.1045074, g: 1.5634476, b: 0.16108295, a: 1}
+    - _Color: {r: 1.0166396, g: 0.5807335, b: 0, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &6623929239317563660
 MonoBehaviour:

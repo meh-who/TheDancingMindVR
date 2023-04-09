@@ -9,11 +9,17 @@ EditorBuildSettings:
     path: Assets/Oculus/Interaction/Samples/Scenes/Examples/GestureExamples.unity
     guid: 4ee2a082a0e621b49ab01667c66f1599
   - enabled: 0
+    path: Assets/Scenes/L_Landing.unity
+    guid: 5d1f02bb992b99540a0d05b15f725c36
+  - enabled: 0
     path: Assets/Scenes/L_Mirror.unity
     guid: c283735ce1dc87e4abc26d6990020318
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/L_MultiPlayer.unity
     guid: 15b3ac14b2405b04d89b4fe2aabc6c77
+  - enabled: 1
+    path: Assets/Scenes/L_Breath.unity
+    guid: 4133f73998fc11c44b1615e04ce55d5f
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 21705946c1a225141852ce801572750e, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 557091e9bc68c044890ffb814d63fbf1, type: 2}

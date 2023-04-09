@@ -465,6 +465,8 @@ struct Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4;
 struct Texture2DArray_t5ADB8D23A8AA2F2F3916F43852194B78E579E6BA;
 // UnityEngine.Texture3D
 struct Texture3D_tDC30A0F19B6055086859D1ABC098D6E6762000E1;
+// UnityEngine.TrailRenderer
+struct TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39;
 // UnityEngine.Transform
 struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1;
 // System.Type
@@ -5628,6 +5630,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LineRenderer_SetPosition_Injected_m27450
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E* LineRenderer_GetColorGradientCopy_m1EBE8F78EECA30AC1BD30B9611189CFE077D5858 (LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.LineRenderer::SetColorGradient(UnityEngine.Gradient)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LineRenderer_SetColorGradient_mDFD0492C558C4E094200CA632401A5B6C41751F0 (LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* __this, Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E* ___curve0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.LineRenderer::set_startColor(UnityEngine.Color)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LineRenderer_set_startColor_mF72FAB20C09372FC8F2CBFCBD837FA02A87FBA91 (LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.LineRenderer::set_endColor(UnityEngine.Color)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LineRenderer_set_endColor_m6AF26E0174434828BC6EF1BAC1FE188084819D9D (LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___value0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.SkinnedMeshRenderer::BakeMesh(UnityEngine.Mesh,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SkinnedMeshRenderer_BakeMesh_mD8BD5693028E8EF50899F45CBC3E01359BC03262 (SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E* __this, Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___mesh0, bool ___useScale1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Object::.ctor()
@@ -6483,10 +6489,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetTexture_mA9F8461850AAB88F992E9C6FA6F24C2E050B83FD (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___nameID0, Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___value1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Material::SetTexture(System.String,UnityEngine.Texture)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetTexture_m06083C3F52EF02FFB1177901D9907314F280F9A5 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, String_t* ___name0, Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___value1, const RuntimeMethod* method) ;
+// UnityEngine.Vector2 UnityEngine.Material::GetTextureOffset(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Material_GetTextureOffset_m184386CB88C6333F160E869ACDC1738DB8269412 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___nameID0, const RuntimeMethod* method) ;
+// UnityEngine.Vector2 UnityEngine.Material::GetTextureOffset(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Material_GetTextureOffset_m4F9E2C96960DFE3C76B9D878F8E654D78185F9CA (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, String_t* ___name0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Material::SetTextureOffset(System.Int32,UnityEngine.Vector2)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetTextureOffset_mB28E782AE9F9B4CB9D36F209C976F8A0FE7DF747 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___nameID0, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___value1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Material::SetTextureOffset(System.String,UnityEngine.Vector2)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetTextureOffset_m40F3FCE32535625DDF26C0C073D37968117FBFE1 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, String_t* ___name0, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___value1, const RuntimeMethod* method) ;
+// UnityEngine.Vector2 UnityEngine.Material::GetTextureScale(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Material_GetTextureScale_m18C0A99FD39A562A8C776265419D381012FE1FB3 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___nameID0, const RuntimeMethod* method) ;
+// UnityEngine.Vector2 UnityEngine.Material::GetTextureScale(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Material_GetTextureScale_mF3406F1439C275C25FEE0C4E19108B29AA77E693 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, String_t* ___name0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Material::SetTextureScale(System.Int32,UnityEngine.Vector2)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetTextureScale_mBA092A3DCD393695B32801FD05F70A8CC58CB89D (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___nameID0, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___value1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Material::SetTextureScale(System.String,UnityEngine.Vector2)
@@ -6505,6 +6519,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetColorImpl_Injected_m7AF196BB
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetMatrixImpl_Injected_m982E0183155834D0018A8A0174DBE0536F56D49E (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___name0, Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* ___value1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Material::GetColorImpl_Injected(System.Int32,UnityEngine.Color&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_GetColorImpl_Injected_mC524E0342AAF07A17E22CDBA0FAA0BAC0689CED4 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___name0, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* ___ret1, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Material::GetTextureScaleAndOffsetImpl_Injected(System.Int32,UnityEngine.Vector4&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_GetTextureScaleAndOffsetImpl_Injected_m9D5AE1B801A40BE3B79ED6B2E3DB19F2473797BF (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___name0, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3* ___ret1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Material::SetTextureOffsetImpl_Injected(System.Int32,UnityEngine.Vector2&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetTextureOffsetImpl_Injected_m72800792266BE12FAC7454DBC1B867967AEDFE61 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___name0, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* ___offset1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Material::SetTextureScaleImpl_Injected(System.Int32,UnityEngine.Vector2&)
@@ -6543,6 +6559,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetTextureOffsetImpl_mE41BEEFB734E130CAE54A985E7A460001FA4C767 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___name0, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___offset1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Material::SetTextureScaleImpl(System.Int32,UnityEngine.Vector2)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetTextureScaleImpl_m4532AEE035CFCB3320EE4ECFB57E39B3829E8B75 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___name0, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___scale1, const RuntimeMethod* method) ;
+// UnityEngine.Vector4 UnityEngine.Material::GetTextureScaleAndOffsetImpl(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 Material_GetTextureScaleAndOffsetImpl_m21B08CA23A2FB8580088C05C9A61C183D3D26699 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___name0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Vector2::.ctor(System.Single,System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___x0, float ___y1, const RuntimeMethod* method) ;
 // System.Reflection.MethodInfo System.Delegate::get_Method()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MethodInfo_t* Delegate_get_Method_mB684A7525653DFE0EFC35E58449E1FC8E2A9F019 (Delegate_t* __this, const RuntimeMethod* method) ;
 // System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
@@ -7131,8 +7151,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rect_set_x_mAB91AB71898A20762BC66FD0723C
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Rect_get_y_mC733E8D49F3CE21B2A3D40A1B72D687F22C97F49 (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Rect::set_y(System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rect_set_y_mDE91F4B98A6E8623EFB1250FF6526D5DB5855629 (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, float ___value0, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Vector2::.ctor(System.Single,System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___x0, float ___y1, const RuntimeMethod* method) ;
 // UnityEngine.Vector2 UnityEngine.Rect::get_position()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Rect_get_position_m9B7E583E67443B6F4280A676E644BB0B9E7C4E38 (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Rect::set_position(UnityEngine.Vector2)
@@ -13165,6 +13183,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Light_get_shadowStrength_m4AB6E78F7A28A
 	float icallRetVal = _il2cpp_icall_func(__this);
 	return icallRetVal;
 }
+// System.Void UnityEngine.Light::set_shadowStrength(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Light_set_shadowStrength_mA17F6ABA91CE032E008149D5D53FCD9B00497A4F (Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* __this, float ___value0, const RuntimeMethod* method) 
+{
+	typedef void (*Light_set_shadowStrength_mA17F6ABA91CE032E008149D5D53FCD9B00497A4F_ftn) (Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3*, float);
+	static Light_set_shadowStrength_mA17F6ABA91CE032E008149D5D53FCD9B00497A4F_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Light_set_shadowStrength_mA17F6ABA91CE032E008149D5D53FCD9B00497A4F_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Light::set_shadowStrength(System.Single)");
+	_il2cpp_icall_func(__this, ___value0);
+}
 // UnityEngine.Rendering.LightShadowResolution UnityEngine.Light::get_shadowResolution()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Light_get_shadowResolution_m25DEE1B86D836FF5C6AA902021BE519D3120F6E4 (Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* __this, const RuntimeMethod* method) 
 {
@@ -13725,6 +13752,63 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_localBounds_Injected_m51DD7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Single UnityEngine.TrailRenderer::get_time()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float TrailRenderer_get_time_mC1990BCC4C1A584EE689FD3BBF5ACC43F3AB96D8 (TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39* __this, const RuntimeMethod* method) 
+{
+	typedef float (*TrailRenderer_get_time_mC1990BCC4C1A584EE689FD3BBF5ACC43F3AB96D8_ftn) (TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39*);
+	static TrailRenderer_get_time_mC1990BCC4C1A584EE689FD3BBF5ACC43F3AB96D8_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (TrailRenderer_get_time_mC1990BCC4C1A584EE689FD3BBF5ACC43F3AB96D8_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.TrailRenderer::get_time()");
+	float icallRetVal = _il2cpp_icall_func(__this);
+	return icallRetVal;
+}
+// System.Void UnityEngine.TrailRenderer::set_time(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrailRenderer_set_time_mD4760D84A531B310E2A4069F87B4E2EF2FEF4C23 (TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39* __this, float ___value0, const RuntimeMethod* method) 
+{
+	typedef void (*TrailRenderer_set_time_mD4760D84A531B310E2A4069F87B4E2EF2FEF4C23_ftn) (TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39*, float);
+	static TrailRenderer_set_time_mD4760D84A531B310E2A4069F87B4E2EF2FEF4C23_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (TrailRenderer_set_time_mD4760D84A531B310E2A4069F87B4E2EF2FEF4C23_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.TrailRenderer::set_time(System.Single)");
+	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Single UnityEngine.TrailRenderer::get_startWidth()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float TrailRenderer_get_startWidth_m66ED63CEBC69041107B2DFA97E73DA5B796A3704 (TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39* __this, const RuntimeMethod* method) 
+{
+	typedef float (*TrailRenderer_get_startWidth_m66ED63CEBC69041107B2DFA97E73DA5B796A3704_ftn) (TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39*);
+	static TrailRenderer_get_startWidth_m66ED63CEBC69041107B2DFA97E73DA5B796A3704_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (TrailRenderer_get_startWidth_m66ED63CEBC69041107B2DFA97E73DA5B796A3704_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.TrailRenderer::get_startWidth()");
+	float icallRetVal = _il2cpp_icall_func(__this);
+	return icallRetVal;
+}
+// System.Void UnityEngine.TrailRenderer::set_startWidth(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrailRenderer_set_startWidth_m63B133730FF263B3E8153DDCD095194202F820AC (TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39* __this, float ___value0, const RuntimeMethod* method) 
+{
+	typedef void (*TrailRenderer_set_startWidth_m63B133730FF263B3E8153DDCD095194202F820AC_ftn) (TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39*, float);
+	static TrailRenderer_set_startWidth_m63B133730FF263B3E8153DDCD095194202F820AC_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (TrailRenderer_set_startWidth_m63B133730FF263B3E8153DDCD095194202F820AC_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.TrailRenderer::set_startWidth(System.Single)");
+	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Single UnityEngine.TrailRenderer::get_endWidth()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float TrailRenderer_get_endWidth_mDDCC2ACE8309BEFCE89EDA4B127463E18AEAF022 (TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39* __this, const RuntimeMethod* method) 
+{
+	typedef float (*TrailRenderer_get_endWidth_mDDCC2ACE8309BEFCE89EDA4B127463E18AEAF022_ftn) (TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39*);
+	static TrailRenderer_get_endWidth_mDDCC2ACE8309BEFCE89EDA4B127463E18AEAF022_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (TrailRenderer_get_endWidth_mDDCC2ACE8309BEFCE89EDA4B127463E18AEAF022_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.TrailRenderer::get_endWidth()");
+	float icallRetVal = _il2cpp_icall_func(__this);
+	return icallRetVal;
+}
+// System.Void UnityEngine.TrailRenderer::set_endWidth(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrailRenderer_set_endWidth_mCB89A9AEFE6B16FAA2AF9BA9570399C908477578 (TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39* __this, float ___value0, const RuntimeMethod* method) 
+{
+	typedef void (*TrailRenderer_set_endWidth_mCB89A9AEFE6B16FAA2AF9BA9570399C908477578_ftn) (TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39*, float);
+	static TrailRenderer_set_endWidth_mCB89A9AEFE6B16FAA2AF9BA9570399C908477578_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (TrailRenderer_set_endWidth_mCB89A9AEFE6B16FAA2AF9BA9570399C908477578_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.TrailRenderer::set_endWidth(System.Single)");
+	_il2cpp_icall_func(__this, ___value0);
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -13857,6 +13941,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LineRenderer_SetPositions_m7F7B7B5442843
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (LineRenderer_SetPositions_m7F7B7B54428437D0BF5256D4C82F92180B577B02_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.LineRenderer::SetPositions(UnityEngine.Vector3[])");
 	_il2cpp_icall_func(__this, ___positions0);
+}
+// System.Void UnityEngine.LineRenderer::SetColors(UnityEngine.Color,UnityEngine.Color)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LineRenderer_SetColors_mD901C90CB236476D0624804C05B036E6A9E977BB (LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___start0, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___end1, const RuntimeMethod* method) 
+{
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0 = ___start0;
+		LineRenderer_set_startColor_mF72FAB20C09372FC8F2CBFCBD837FA02A87FBA91(__this, L_0, NULL);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ___end1;
+		LineRenderer_set_endColor_m6AF26E0174434828BC6EF1BAC1FE188084819D9D(__this, L_1, NULL);
+		return;
+	}
 }
 // System.Void UnityEngine.LineRenderer::set_startColor_Injected(UnityEngine.Color&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LineRenderer_set_startColor_Injected_mF6589CABC27AAEB4F8F98D20F9248A6EDD7CDA52 (LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* ___value0, const RuntimeMethod* method) 
@@ -27439,6 +27534,53 @@ IL_0030:
 		return;
 	}
 }
+// UnityEngine.Vector2 UnityEngine.Material::get_mainTextureOffset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Material_get_mainTextureOffset_m642934E0FF835323FCAFE2F43E314722E8B6A439 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4B8146FB95E4F51B29DA41EB5F6D60F8FD0ECF21);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	bool V_1 = false;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	{
+		int32_t L_0;
+		L_0 = Material_GetFirstPropertyNameIdByAttribute_mCBB72749633F7B8A879D33F0B34DB4F54F8C2439(__this, ((int32_t)128), NULL);
+		V_0 = L_0;
+		int32_t L_1 = V_0;
+		V_1 = (bool)((((int32_t)((((int32_t)L_1) < ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_2 = V_1;
+		if (!L_2)
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		int32_t L_3 = V_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4;
+		L_4 = Material_GetTextureOffset_m184386CB88C6333F160E869ACDC1738DB8269412(__this, L_3, NULL);
+		V_2 = L_4;
+		goto IL_0030;
+	}
+
+IL_0022:
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_5;
+		L_5 = Material_GetTextureOffset_m4F9E2C96960DFE3C76B9D878F8E654D78185F9CA(__this, _stringLiteral4B8146FB95E4F51B29DA41EB5F6D60F8FD0ECF21, NULL);
+		V_2 = L_5;
+		goto IL_0030;
+	}
+
+IL_0030:
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_6 = V_2;
+		return L_6;
+	}
+}
 // System.Void UnityEngine.Material::set_mainTextureOffset(UnityEngine.Vector2)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_set_mainTextureOffset_m87C139F275814719F9A10709C34E2132DFEB7A12 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___value0, const RuntimeMethod* method) 
 {
@@ -27478,6 +27620,53 @@ IL_0023:
 IL_0030:
 	{
 		return;
+	}
+}
+// UnityEngine.Vector2 UnityEngine.Material::get_mainTextureScale()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Material_get_mainTextureScale_mF28E905E1331B3F6AB145193026A1729E17BE7ED (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4B8146FB95E4F51B29DA41EB5F6D60F8FD0ECF21);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	bool V_1 = false;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	{
+		int32_t L_0;
+		L_0 = Material_GetFirstPropertyNameIdByAttribute_mCBB72749633F7B8A879D33F0B34DB4F54F8C2439(__this, ((int32_t)128), NULL);
+		V_0 = L_0;
+		int32_t L_1 = V_0;
+		V_1 = (bool)((((int32_t)((((int32_t)L_1) < ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_2 = V_1;
+		if (!L_2)
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		int32_t L_3 = V_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4;
+		L_4 = Material_GetTextureScale_m18C0A99FD39A562A8C776265419D381012FE1FB3(__this, L_3, NULL);
+		V_2 = L_4;
+		goto IL_0030;
+	}
+
+IL_0022:
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_5;
+		L_5 = Material_GetTextureScale_mF3406F1439C275C25FEE0C4E19108B29AA77E693(__this, _stringLiteral4B8146FB95E4F51B29DA41EB5F6D60F8FD0ECF21, NULL);
+		V_2 = L_5;
+		goto IL_0030;
+	}
+
+IL_0030:
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_6 = V_2;
+		return L_6;
 	}
 }
 // System.Void UnityEngine.Material::set_mainTextureScale(UnityEngine.Vector2)
@@ -27868,6 +28057,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetMatrixArrayImpl_mDD11C958EB2
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Material_SetMatrixArrayImpl_mDD11C958EB28BA01565E71737E0E03E0CCF2CDA4_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Material::SetMatrixArrayImpl(System.Int32,UnityEngine.Matrix4x4[],System.Int32)");
 	_il2cpp_icall_func(__this, ___name0, ___values1, ___count2);
+}
+// UnityEngine.Vector4 UnityEngine.Material::GetTextureScaleAndOffsetImpl(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 Material_GetTextureScaleAndOffsetImpl_m21B08CA23A2FB8580088C05C9A61C183D3D26699 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___name0, const RuntimeMethod* method) 
+{
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		int32_t L_0 = ___name0;
+		Material_GetTextureScaleAndOffsetImpl_Injected_m9D5AE1B801A40BE3B79ED6B2E3DB19F2473797BF(__this, L_0, (&V_0), NULL);
+		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_1 = V_0;
+		return L_1;
+	}
 }
 // System.Void UnityEngine.Material::SetTextureOffsetImpl(System.Int32,UnityEngine.Vector2)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetTextureOffsetImpl_mE41BEEFB734E130CAE54A985E7A460001FA4C767 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___name0, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___offset1, const RuntimeMethod* method) 
@@ -28329,6 +28530,29 @@ IL_000b:
 		return L_2;
 	}
 }
+// UnityEngine.Vector4 UnityEngine.Material::GetVector(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 Material_GetVector_mA2011D4DA2CC58003AE90DBF0802CF5EE31B014D (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, String_t* ___name0, const RuntimeMethod* method) 
+{
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		String_t* L_0 = ___name0;
+		int32_t L_1;
+		L_1 = Shader_PropertyToID_mE98523D50F5656CAE89B30695C458253EB8956CA(L_0, NULL);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_2;
+		L_2 = Material_GetColorImpl_m44455DBA8C6391B5638D11934B8E4CC0713B4EFF(__this, L_1, NULL);
+		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_3;
+		L_3 = Color_op_Implicit_m9B3228DAFA8DC57A75DE00CBBF13ED4F1E7B01FF_inline(L_2, NULL);
+		V_0 = L_3;
+		goto IL_0015;
+	}
+
+IL_0015:
+	{
+		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_4 = V_0;
+		return L_4;
+	}
+}
 // UnityEngine.Vector4 UnityEngine.Material::GetVector(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 Material_GetVector_mFE0366FDCB87331910BCE5E234030C20A25484A2 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___nameID0, const RuntimeMethod* method) 
 {
@@ -28432,6 +28656,106 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetTextureScale_mBA092A3DCD3936
 		return;
 	}
 }
+// UnityEngine.Vector2 UnityEngine.Material::GetTextureOffset(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Material_GetTextureOffset_m4F9E2C96960DFE3C76B9D878F8E654D78185F9CA (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, String_t* ___name0, const RuntimeMethod* method) 
+{
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		String_t* L_0 = ___name0;
+		int32_t L_1;
+		L_1 = Shader_PropertyToID_mE98523D50F5656CAE89B30695C458253EB8956CA(L_0, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2;
+		L_2 = Material_GetTextureOffset_m184386CB88C6333F160E869ACDC1738DB8269412(__this, L_1, NULL);
+		V_0 = L_2;
+		goto IL_0010;
+	}
+
+IL_0010:
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_3 = V_0;
+		return L_3;
+	}
+}
+// UnityEngine.Vector2 UnityEngine.Material::GetTextureOffset(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Material_GetTextureOffset_m184386CB88C6333F160E869ACDC1738DB8269412 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___nameID0, const RuntimeMethod* method) 
+{
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		int32_t L_0 = ___nameID0;
+		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_1;
+		L_1 = Material_GetTextureScaleAndOffsetImpl_m21B08CA23A2FB8580088C05C9A61C183D3D26699(__this, L_0, NULL);
+		V_0 = L_1;
+		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_2 = V_0;
+		float L_3 = L_2.___z_3;
+		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_4 = V_0;
+		float L_5 = L_4.___w_4;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_6;
+		memset((&L_6), 0, sizeof(L_6));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_6), L_3, L_5, /*hidden argument*/NULL);
+		V_1 = L_6;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_7 = V_1;
+		return L_7;
+	}
+}
+// UnityEngine.Vector2 UnityEngine.Material::GetTextureScale(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Material_GetTextureScale_mF3406F1439C275C25FEE0C4E19108B29AA77E693 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, String_t* ___name0, const RuntimeMethod* method) 
+{
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		String_t* L_0 = ___name0;
+		int32_t L_1;
+		L_1 = Shader_PropertyToID_mE98523D50F5656CAE89B30695C458253EB8956CA(L_0, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2;
+		L_2 = Material_GetTextureScale_m18C0A99FD39A562A8C776265419D381012FE1FB3(__this, L_1, NULL);
+		V_0 = L_2;
+		goto IL_0010;
+	}
+
+IL_0010:
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_3 = V_0;
+		return L_3;
+	}
+}
+// UnityEngine.Vector2 UnityEngine.Material::GetTextureScale(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Material_GetTextureScale_m18C0A99FD39A562A8C776265419D381012FE1FB3 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___nameID0, const RuntimeMethod* method) 
+{
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		int32_t L_0 = ___nameID0;
+		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_1;
+		L_1 = Material_GetTextureScaleAndOffsetImpl_m21B08CA23A2FB8580088C05C9A61C183D3D26699(__this, L_0, NULL);
+		V_0 = L_1;
+		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_2 = V_0;
+		float L_3 = L_2.___x_1;
+		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_4 = V_0;
+		float L_5 = L_4.___y_2;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_6;
+		memset((&L_6), 0, sizeof(L_6));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_6), L_3, L_5, /*hidden argument*/NULL);
+		V_1 = L_6;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_7 = V_1;
+		return L_7;
+	}
+}
 // System.Void UnityEngine.Material::SetColorImpl_Injected(System.Int32,UnityEngine.Color&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetColorImpl_Injected_m7AF196BB00E62E5B47067FD643740884C692694A (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___name0, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* ___value1, const RuntimeMethod* method) 
 {
@@ -28457,6 +28781,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_GetColorImpl_Injected_mC524E034
 	static Material_GetColorImpl_Injected_mC524E0342AAF07A17E22CDBA0FAA0BAC0689CED4_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Material_GetColorImpl_Injected_mC524E0342AAF07A17E22CDBA0FAA0BAC0689CED4_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Material::GetColorImpl_Injected(System.Int32,UnityEngine.Color&)");
+	_il2cpp_icall_func(__this, ___name0, ___ret1);
+}
+// System.Void UnityEngine.Material::GetTextureScaleAndOffsetImpl_Injected(System.Int32,UnityEngine.Vector4&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_GetTextureScaleAndOffsetImpl_Injected_m9D5AE1B801A40BE3B79ED6B2E3DB19F2473797BF (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___name0, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3* ___ret1, const RuntimeMethod* method) 
+{
+	typedef void (*Material_GetTextureScaleAndOffsetImpl_Injected_m9D5AE1B801A40BE3B79ED6B2E3DB19F2473797BF_ftn) (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3*, int32_t, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3*);
+	static Material_GetTextureScaleAndOffsetImpl_Injected_m9D5AE1B801A40BE3B79ED6B2E3DB19F2473797BF_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Material_GetTextureScaleAndOffsetImpl_Injected_m9D5AE1B801A40BE3B79ED6B2E3DB19F2473797BF_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Material::GetTextureScaleAndOffsetImpl_Injected(System.Int32,UnityEngine.Vector4&)");
 	_il2cpp_icall_func(__this, ___name0, ___ret1);
 }
 // System.Void UnityEngine.Material::SetTextureOffsetImpl_Injected(System.Int32,UnityEngine.Vector2&)
@@ -39363,6 +39696,16 @@ IL_0021:
 		return L_9;
 	}
 }
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___x0, float ___y1, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___x0;
+		__this->___x_0 = L_0;
+		float L_1 = ___y1;
+		__this->___y_1 = L_1;
+		return;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t BeforeRenderOrderAttribute_get_order_m70EDC4881AB025647CF1F01D8733F05097C05E29_inline (BeforeRenderOrderAttribute_tA8FE37086C591C22052237ABB6EE2B64C1429D8E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -39819,16 +40162,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999E
 		__this->___y_3 = L_1;
 		float L_2 = ___z2;
 		__this->___z_4 = L_2;
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___x0, float ___y1, const RuntimeMethod* method) 
-{
-	{
-		float L_0 = ___x0;
-		__this->___x_0 = L_0;
-		float L_1 = ___y1;
-		__this->___y_1 = L_1;
 		return;
 	}
 }

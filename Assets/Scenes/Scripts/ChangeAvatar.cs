@@ -10,11 +10,19 @@ public class ChangeAvatar : MonoBehaviour
 
     [SerializeField] private GameObject _magicParticles;
     [SerializeField] private Transform _camera;
+
+
+    [SerializeField] private Transform _visualL;
+    [SerializeField] private Transform _visualR;
+
+    private int count = 0;
+    private int totAvatars;
+
     public Vector3 camPos => _camera.position;
 
     void Start()
     {
-
+        totAvatars = _visualL.childCount;
     }
 
     void Update()
@@ -24,7 +32,8 @@ public class ChangeAvatar : MonoBehaviour
 
     public void magicSpawn()
     {
-        Realtime.Instantiate(_magicParticles.name, new Vector3(camPos.x, camPos.y, camPos.z), transform.rotation, new Realtime.InstantiateOptions
+        //Debug.Log(camPos);
+        Realtime.Instantiate(_magicParticles.name, camPos, transform.rotation, new Realtime.InstantiateOptions
         {
             ownedByClient = true,
             preventOwnershipTakeover = true,
@@ -34,5 +43,29 @@ public class ChangeAvatar : MonoBehaviour
         });
     }
 
+    public void nextAvatar()
+    {
+        _visualL.GetChild(count).gameObject.SetActive(false);
+        _visualR.GetChild(count).gameObject.SetActive(false);
+
+        //Ternary Operator, similiar to if else statement
+        count = count < totAvatars - 1 ? count += 1 : count = 0;
+        
+        _visualL.GetChild(count).gameObject.SetActive(true);
+        _visualR.GetChild(count).gameObject.SetActive(true);
+
+    }
+
+    public void lastAvatar()
+    {
+        _visualL.GetChild(count).gameObject.SetActive(false);
+        _visualR.GetChild(count).gameObject.SetActive(false);
+
+        //Ternary Operator, similiar to if else statement
+        count = count > 0 ? count -= 1 : count = totAvatars - 1;
+
+        _visualL.GetChild(count).gameObject.SetActive(true);
+        _visualR.GetChild(count).gameObject.SetActive(true);
+    }
 
 }

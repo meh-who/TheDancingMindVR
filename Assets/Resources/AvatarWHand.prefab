@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 8453960317875607987}
   m_Layer: 0
   m_Name: Geometry
-  m_TagString: Untagged
+  m_TagString: Torso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162,8 +162,8 @@ Transform:
   m_GameObject: {fileID: 8453960317875607985}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 8453960318313912868}
   m_RootOrder: 0
@@ -209,7 +209,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 585eafc6d7aa84f44b3ed86867302edd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -394,6 +394,7 @@ GameObject:
   - component: {fileID: 8453960318313912871}
   - component: {fileID: 8453960318313912870}
   - component: {fileID: 8453960318313912869}
+  - component: {fileID: 6306407939620031774}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -463,7 +464,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8453960318313912867}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0721ea03dec5e4e41b96751a8e7c437f, type: 3}
   m_Name: 
@@ -486,6 +487,25 @@ MonoBehaviour:
   _syncScale: 0
   _syncVelocity: 1
   _maintainOwnershipWhileSleeping: 0
+--- !u!114 &6306407939620031774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8453960318313912867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 673bb58d56e84e44a83c0898bf70a409, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _voice: {fileID: 8453960318313912871}
+  startColor: {r: 0.9137255, g: 0.7254902, b: 0.24705882, a: 0}
+  endColor: {r: 1, g: 0.81753606, b: 0.3537736, a: 0}
+  duration: 3
+  _threshold: 0.35
+  windowTime: 2.5
+  _canBreath: 0
 --- !u!1 &8453960318451754631
 GameObject:
   m_ObjectHideFlags: 0

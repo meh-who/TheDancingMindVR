@@ -15,7 +15,7 @@ Shader "Oculus/Interaction/SkyboxGradient"
 	Properties
 	{
 		_TopColor("Top Color", Color) = (1, 0.3, 0.3, 1)
-		_MiddleColor("MiddleColor", Color) = (1.0, 1.0, 1)
+		_MiddleColor("Middle Color", Color) = (1.0, 1.0, 1)
 		_BottomColor("Bottom Color", Color) = (0.3, 0.3, 1, 1)
 		_Direction("Direction", Vector) = (0, 1, 0)
 

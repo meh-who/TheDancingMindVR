@@ -9,11 +9,15 @@
         _Multiply ("Multiply", float) = 0
         _Add ("Add", float) = 0
         _Pow ("Pow", float) = 0
+        _Alpha ("Transparency", Range(0,1)) = 1
     }
     SubShader
     {
         Tags { "RenderType"="Opaque" }
+        //Tags { "Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Transparent"}
         LOD 100
+
+        //Blend SrcAlpha OneMinusSrcAlpha 
 
         Pass
         {
@@ -45,7 +49,7 @@
             float4 _Data;
             //float4 _CamPos;
             float4 _ColorOne, _ColorTwo;
-            float _PreAdd, _Multiply, _Add, _Pow;
+            float _PreAdd, _Multiply, _Add, _Pow, _Alpha;
 
             v2f vert (appdata v)
             {
@@ -69,7 +73,7 @@
                 float3 finalColor = lerp(_ColorOne,_ColorTwo,d);
                 // apply fog
                 UNITY_APPLY_FOG(i.fogCoord, finalColor);
-                return fixed4(finalColor,1);
+                return fixed4(finalColor, _Alpha);
             }
             ENDCG
         }

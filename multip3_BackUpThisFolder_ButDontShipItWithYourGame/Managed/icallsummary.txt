@@ -265,6 +265,7 @@ UnityEngine.Animator::SetFloatString
 UnityEngine.Animator::SetFloatStringDamp
 UnityEngine.Animator::SetIntegerID
 UnityEngine.Animator::SetLayerWeight
+UnityEngine.Animator::SetTriggerID
 UnityEngine.Animator::SetTriggerString
 UnityEngine.Animator::get_deltaPosition_Injected
 UnityEngine.Animator::set_applyRootMotion
@@ -303,6 +304,8 @@ UnityEngine.Audio.AudioClipPlayable::SetSpatialBlendInternal
 UnityEngine.Audio.AudioClipPlayable::SetStartDelayInternal
 UnityEngine.Audio.AudioClipPlayable::SetStereoPanInternal
 UnityEngine.Audio.AudioClipPlayable::SetVolumeInternal
+UnityEngine.Audio.AudioMixer::GetFloat
+UnityEngine.Audio.AudioMixer::SetFloat
 UnityEngine.Audio.AudioMixer::TransitionToSnapshotInternal
 UnityEngine.Audio.AudioMixer::TransitionToSnapshots
 UnityEngine.Audio.AudioMixerPlayable::CreateAudioMixerPlayableInternal
@@ -965,6 +968,7 @@ UnityEngine.Light::get_color_Injected
 UnityEngine.Light::set_color_Injected
 UnityEngine.Light::set_intensity
 UnityEngine.Light::set_range
+UnityEngine.Light::set_shadowStrength
 UnityEngine.Light::get_shadows
 UnityEngine.Light::get_type
 UnityEngine.Light::get_shadowResolution
@@ -1000,6 +1004,7 @@ UnityEngine.Material::CreateWithString
 UnityEngine.Material::DisableKeyword
 UnityEngine.Material::EnableKeyword
 UnityEngine.Material::GetColorImpl_Injected
+UnityEngine.Material::GetTextureScaleAndOffsetImpl_Injected
 UnityEngine.Material::SetBufferImpl
 UnityEngine.Material::SetColorImpl_Injected
 UnityEngine.Material::SetConstantBufferImpl
@@ -1172,6 +1177,7 @@ UnityEngine.Object::get_hideFlags
 UnityEngine.Object::FindObjectFromInstanceID
 UnityEngine.Object::Internal_CloneSingle
 UnityEngine.Object::Internal_CloneSingleWithParent
+UnityEngine.Object::Internal_InstantiateSingleWithParent_Injected
 UnityEngine.Object::Internal_InstantiateSingle_Injected
 UnityEngine.Object::FindObjectsOfType
 UnityEngine.ObjectGUIState::Internal_Create
@@ -1218,6 +1224,7 @@ UnityEngine.ParticleSystem/ShapeModule::set_enabled_Injected
 UnityEngine.ParticleSystem/SubEmittersModule::get_subEmittersCount_Injected
 UnityEngine.ParticleSystem/SubEmittersModule::GetSubEmitterSystem_Injected
 UnityEngine.ParticleSystem/TextureSheetAnimationModule::SetSprite_Injected
+UnityEngine.ParticleSystemExtensionsImpl::GetCollisionEvents
 UnityEngine.ParticleSystemRenderer::GetMeshes
 UnityEngine.ParticleSystemRenderer::get_sortingFudge
 UnityEngine.ParticleSystemRenderer::get_pivot_Injected
@@ -1392,6 +1399,7 @@ UnityEngine.Renderer::get_sortingOrder
 UnityEngine.Renderer::Internal_GetPropertyBlock
 UnityEngine.Renderer::Internal_SetPropertyBlock
 UnityEngine.Renderer::SetMaterial
+UnityEngine.Renderer::SetMaterialArray
 UnityEngine.Renderer::get_bounds_Injected
 UnityEngine.Renderer::set_allowOcclusionWhenDynamic
 UnityEngine.Renderer::set_enabled
@@ -1405,6 +1413,7 @@ UnityEngine.Renderer::set_sortingOrder
 UnityEngine.Renderer::GetMaterial
 UnityEngine.Renderer::GetSharedMaterial
 UnityEngine.Renderer::GetMaterialArray
+UnityEngine.Renderer::GetSharedMaterialArray
 UnityEngine.Rendering.CommandBuffer::ValidateAgainstExecutionFlags
 UnityEngine.Rendering.CommandBuffer::CreateGPUFence_Internal
 UnityEngine.Rendering.CommandBuffer::InitBuffer
@@ -1605,9 +1614,13 @@ UnityEngine.Rigidbody2D::get_angularVelocity
 UnityEngine.Rigidbody2D::get_inertia
 UnityEngine.Rigidbody2D::get_mass
 UnityEngine.Rigidbody2D::get_rotation
+UnityEngine.Rigidbody2D::MovePosition_Injected
+UnityEngine.Rigidbody2D::MoveRotation_Angle
 UnityEngine.Rigidbody2D::get_centerOfMass_Injected
+UnityEngine.Rigidbody2D::get_position_Injected
 UnityEngine.Rigidbody2D::get_velocity_Injected
 UnityEngine.Rigidbody2D::set_angularVelocity
+UnityEngine.Rigidbody2D::set_position_Injected
 UnityEngine.Rigidbody2D::set_velocity_Injected
 UnityEngine.Rigidbody2D::get_constraints
 UnityEngine.Rigidbody2D::get_bodyType
@@ -1680,6 +1693,8 @@ UnityEngine.Sprite::get_associatedAlphaSplitTexture
 UnityEngine.Sprite::get_texture
 UnityEngine.Sprite::get_uv
 UnityEngine.Sprite::get_vertices
+UnityEngine.SpriteRenderer::get_color_Injected
+UnityEngine.SpriteRenderer::set_color_Injected
 UnityEngine.SubsystemBindings::DestroySubsystem
 UnityEngine.SubsystemDescriptorBindings::Create
 UnityEngine.SubsystemDescriptorBindings::GetId
@@ -1838,6 +1853,12 @@ UnityEngine.TouchScreenKeyboard::set_characterLimit
 UnityEngine.TouchScreenKeyboard::set_hideInput
 UnityEngine.TouchScreenKeyboard::set_text
 UnityEngine.TouchScreenKeyboard::get_status
+UnityEngine.TrailRenderer::get_endWidth
+UnityEngine.TrailRenderer::get_startWidth
+UnityEngine.TrailRenderer::get_time
+UnityEngine.TrailRenderer::set_endWidth
+UnityEngine.TrailRenderer::set_startWidth
+UnityEngine.TrailRenderer::set_time
 UnityEngine.Transform::IsChildOf
 UnityEngine.Transform::get_hasChanged
 UnityEngine.Transform::get_childCount

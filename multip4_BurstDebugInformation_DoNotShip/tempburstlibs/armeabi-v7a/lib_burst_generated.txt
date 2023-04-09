@@ -173,6 +173,7 @@ Library: lib_burst_generated
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Unity.Services.Core.Telemetry.dll
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Unity.InputSystem.dll
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Unity.VisualScripting.State.dll
+--root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Assembly-CSharp-firstpass.dll
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Oculus.Interaction.dll
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Universal.Runtime.dll
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Obi.dll
