@@ -101,7 +101,7 @@ Material:
     - _MiddleGlowValue: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _Opacity: 0.257
+    - _Opacity: 0.31
     - _OutlineFresnelOpacity: 0
     - _OutlineFresnelPower: 2.462451
     - _OutlineGlowIntensity: 1

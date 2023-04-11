@@ -11,8 +11,9 @@ public class BreathController : MonoBehaviour
 
     public Color startColor;
     public Color endColor;
-/*    public float startY = .87f;
-    public float endY = .2f;*/
+
+    public Color startEmission;
+    public Color endEmission;
 
     public float duration = 5.0f;            // Duration of the color lerp in seconds
 
@@ -23,14 +24,17 @@ public class BreathController : MonoBehaviour
     private int counter = 0;                    // To count if it's breath in or out
 
     private Material skyboxMaterial;
+    private Material spheresMat;
     public bool _canBreath = false;
 
+    public UnityEvent OnBreathIn;
+    public UnityEvent OnBreathOut;
 
 
     void Start()
     {
         skyboxMaterial = RenderSettings.skybox;
-        
+
     }
 
     void Update()
@@ -48,11 +52,11 @@ public class BreathController : MonoBehaviour
                     // trigger coroutine
                     if (counter % 2 == 0)
                     {
-                        StartCoroutine(SkyFadeRoutine(startColor, endColor));
+                        OnBreathIn.Invoke();
                     }
                     else
                     {
-                        StartCoroutine(SkyFadeRoutine(endColor, startColor));
+                        OnBreathOut.Invoke();
                     }
                     lastTriggerTime = Time.time;
                 }
@@ -67,7 +71,34 @@ public class BreathController : MonoBehaviour
     }
 
 
-    public IEnumerator SkyFadeRoutine(Color col1, Color col2)
+    public void FadeInSphere()
+    {
+        if (!spheresMat)
+        {
+            spheresMat = GameObject.FindGameObjectWithTag("Breathable").GetComponent<Renderer>().material;
+        }       
+        StartCoroutine(SphereFadeRoutine(startEmission, endEmission));
+    }
+    public void FadeOutSphere()
+    {
+        if(!spheresMat)
+        {
+            spheresMat = GameObject.FindGameObjectWithTag("Breathable").GetComponent<Renderer>().material;
+        }
+        StartCoroutine(SphereFadeRoutine(endEmission, startEmission));
+    }
+
+    public void FadeInSky()
+    {
+        StartCoroutine(SkyFadeRoutine(startColor, endColor));
+    }
+
+    public void FadeOutSky()
+    {
+        StartCoroutine(SkyFadeRoutine(endColor, startColor));
+    }
+
+    public IEnumerator SphereFadeRoutine(Color col1, Color col2)
     {
         // lerp alpha value
         float timer = 0;
@@ -76,9 +107,26 @@ public class BreathController : MonoBehaviour
             // Calculate the lerp value between 0 and 1
             float t = Mathf.Clamp01(timer / duration);
 
-            /*float lerpedY = Mathf.Lerp(y1, y2, t);
-            Vector4 lerped = new Vector4(0, lerpedY, 0, 1);
-            skyboxMaterial.SetVector("_Direction", lerped);*/
+            Color lerpedColor = Color.Lerp(col1, col2, t);
+            spheresMat.SetColor("_EmissionColor", lerpedColor);
+            spheresMat.EnableKeyword("_EMISSION");
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        // make sure the final value is changed
+        Color newColor2 = col2;
+        spheresMat.SetColor("_EmissionColor", newColor2);
+    }
+
+    public IEnumerator SkyFadeRoutine(Color col1, Color col2)
+    {
+        // lerp alpha value
+        float timer = 0;
+        while (timer <= duration)
+        {
+            // Calculate the lerp value between 0 and 1
+            float t = Mathf.Clamp01(timer / duration);
 
             Color lerpedColor = Color.Lerp(col1, col2, t);
             skyboxMaterial.SetColor("_MiddleColor", lerpedColor);

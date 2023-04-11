@@ -392,7 +392,6 @@ GameObject:
   - component: {fileID: 8453960318313912868}
   - component: {fileID: 8453960318313912856}
   - component: {fileID: 8453960318313912871}
-  - component: {fileID: 8453960318313912870}
   - component: {fileID: 8453960318313912869}
   - component: {fileID: 6306407939620031774}
   m_Layer: 0
@@ -457,18 +456,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd4ff7916cbc1db4dae0b06d829ff79f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8453960318313912870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8453960318313912867}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0721ea03dec5e4e41b96751a8e7c437f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8453960318313912869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,10 +489,66 @@ MonoBehaviour:
   _voice: {fileID: 8453960318313912871}
   startColor: {r: 0.9137255, g: 0.7254902, b: 0.24705882, a: 0}
   endColor: {r: 1, g: 0.81753606, b: 0.3537736, a: 0}
+  startEmission: {r: 1, g: 0.627451, b: 0.18431373, a: 0}
+  endEmission: {r: 0.2830189, g: 0.1535528, b: 0, a: 0}
   duration: 3
-  _threshold: 0.35
+  _threshold: 0.45
   windowTime: 2.5
   _canBreath: 0
+  OnBreathIn:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6306407939620031774}
+        m_TargetAssemblyTypeName: BreathController, Assembly-CSharp
+        m_MethodName: FadeInSphere
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6306407939620031774}
+        m_TargetAssemblyTypeName: BreathController, Assembly-CSharp
+        m_MethodName: FadeInSky
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnBreathOut:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6306407939620031774}
+        m_TargetAssemblyTypeName: BreathController, Assembly-CSharp
+        m_MethodName: FadeOutSphere
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6306407939620031774}
+        m_TargetAssemblyTypeName: BreathController, Assembly-CSharp
+        m_MethodName: FadeOutSky
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8453960318451754631
 GameObject:
   m_ObjectHideFlags: 0

@@ -101,7 +101,7 @@ Material:
     - _MiddleGlowValue: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _Opacity: 0.481
+    - _Opacity: 0.44
     - _OutlineFresnelOpacity: 0
     - _OutlineFresnelPower: 2.462451
     - _OutlineGlowIntensity: 1
@@ -123,7 +123,7 @@ Material:
     - _ThumbGlowValue: 0
     - _UVSec: 0
     - _UseTexture: 0
-    - _WristFade: -0.15
+    - _WristFade: 0
     - _WristLocalOffset: 0.06
     - _WristRange: 0.08
     - _WristScale: 1

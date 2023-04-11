@@ -6,6 +6,7 @@ TagManager:
   tags:
   - HandMesh
   - Torso
+  - Breathable
   layers:
   - Default
   - TransparentFX

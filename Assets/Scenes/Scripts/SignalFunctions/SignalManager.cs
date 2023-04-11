@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SignalManager : MonoBehaviour
 {
-    public float startHandGrow = -.5f;
-    public float endHandGrow = .5f;
+    public float startHandGrow = -.2f;
+    public float endHandGrow = .2f;
     private GameObject[] handMeshes;
     [Space]
     public float startBodyGrow = -.5f;
@@ -13,6 +13,15 @@ public class SignalManager : MonoBehaviour
     private Material bodyMat;
     [Space]
     public float duration = 4.0f;            // Duration of the color lerp in seconds
+
+    private Material skyboxMaterial;
+    public Color InitialSkyColor;
+
+    private void Awake()
+    {
+        skyboxMaterial = RenderSettings.skybox;
+        skyboxMaterial.SetColor("_MiddleColor", InitialSkyColor);
+    }
 
 
     public void TriggerBreath()
@@ -46,12 +55,12 @@ public class SignalManager : MonoBehaviour
         foreach(GameObject mesh in handMeshes)
         {
             Material handMat = mesh.GetComponent<Renderer>().material;
-            Debug.Log(handMat.name);
-            StartCoroutine(HandFadeRoutine(handMat));
+            StartCoroutine(HandFadeRoutine(handMat, startHandGrow, endHandGrow));
+            
         }
     }
     
-    public IEnumerator HandFadeRoutine(Material mat)
+    public IEnumerator HandFadeRoutine(Material mat, float grow1, float grow2)
     {
         // lerp alpha value
         float timer = 0;
@@ -60,16 +69,16 @@ public class SignalManager : MonoBehaviour
             // Calculate the lerp value between 0 and 1
             float t = Mathf.Clamp01(timer / duration);
 
-            float lerpedGlow = Mathf.Lerp(startHandGrow, endHandGrow, t);
-            mat.SetFloat("_Grow", lerpedGlow);
+            float lerpedGlow = Mathf.Lerp(grow1, grow2, t);
+            mat.SetFloat("_CutoffHeight", lerpedGlow);
 
             timer += Time.deltaTime;
             yield return null;
         }
 
         // make sure the final value is changed
-        float newGlow = endHandGrow;
-        mat.SetFloat("_Grow", newGlow);
+        float newGlow = grow2;
+        mat.SetFloat("_CutoffHeight", newGlow);
     }
 
     public void RevealBody()
