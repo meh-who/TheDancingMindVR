@@ -17,7 +17,7 @@ Material:
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 3000
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -101,7 +101,7 @@ Material:
     - _MiddleGlowValue: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _Opacity: 0.31
+    - _Opacity: 0.225
     - _OutlineFresnelOpacity: 0
     - _OutlineFresnelPower: 2.462451
     - _OutlineGlowIntensity: 1
@@ -135,7 +135,7 @@ Material:
     - _ColorGlow: {r: 0.1215686, g: 0.1254902, b: 0.1294117, a: 1}
     - _ColorPrimary: {r: 1, g: 0.4481132, b: 0.4481132, a: 1}
     - _ColorSecondary: {r: 1, g: 0.8443396, b: 0.8443396, a: 1}
-    - _ColorTop: {r: 0.9528302, g: 0.9157472, b: 0.40899786, a: 1}
+    - _ColorTop: {r: 0.95283014, g: 0.9157472, b: 0.40899783, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FingerGlowColor: {r: 1, g: 1, b: 1, a: 1}
     - _MainColor: {r: 0.1960784, g: 0.2039215, b: 0.2117647, a: 1}

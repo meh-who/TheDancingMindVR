@@ -186,6 +186,7 @@ Library: lib_burst_generated
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Oculus.VR.dll
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Unity.RenderPipeline.Universal.ShaderLibrary.dll
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\VoiceSDK.Dictation.Runtime.dll
+--root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Febucci.TextAnimator.Runtime.dll
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Unity.Services.Core.Environments.dll
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\CFXRDemo.dll
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\VoiceSDK.Runtime.dll
@@ -202,10 +203,12 @@ Library: lib_burst_generated
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\AssistantCoreSDKRuntime.dll
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Unity.Services.Core.Scheduler.dll
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Meta.WitAi.Conduit.dll
+--root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Febucci.TextAnimator.Demo.Runtime.dll
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Oculus.AudioManager.dll
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Unity.Services.Core.Device.dll
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Normal.Realtime.dll
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Oculus.LipSync.dll
+--root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\BoingKit.dll
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\CFXRRuntime.dll
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Oculus.Spatializer.dll
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\PathCreator.dll
@@ -226,8 +229,6 @@ Library: lib_burst_generated
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Core.ShaderLibrary.dll
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\KinoBloom.Runtime.dll
 --root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Universal.Shaders.dll
---root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Febucci.TextAnimator.Runtime.dll
---root-assembly=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\Febucci.TextAnimator.Demo.Runtime.dll
 --assembly-folder=C:\Users\meiji\Documents\GitHub\MultiplayerVR2\Temp\StagingArea\Data\Managed\
 --pdb-search-paths=Temp/ManagedSymbols/
 --method=Unity.Jobs.IJobForExtensions+ForJobStruct`1[[UnityEngine.Rendering.Universal.ReorderJob`1[[UnityEngine.Rendering.Universal.LightMinMaxZ, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.Rendering.Universal.ReorderJob`1[[UnityEngine.Rendering.Universal.LightMinMaxZ, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]&, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--e943843acfb78f5f2f3716a6553740d9

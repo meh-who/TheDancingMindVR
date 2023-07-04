@@ -13682,7 +13682,7 @@ CATCH_01a3_3:
 								WebException_t106BE934ACC529D73F9EA01B0545487E8F6582C8* L_78 = V_11;
 								NullCheck(L_78);
 								String_t* L_79;
-								L_79 = VirtualFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Exception::get_StackTrace() */, L_78);
+								L_79 = VirtualFuncInvoker0< String_t* >::Invoke(9 /* System.String System.Exception::get_StackTrace() */, L_78);
 								NullCheck(L_77);
 								ArrayElementTypeCheck (L_77, L_79);
 								(L_77)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)L_79);
@@ -13744,7 +13744,7 @@ CATCH_0208_3:
 							Exception_t* L_94 = V_12;
 							NullCheck(L_94);
 							String_t* L_95;
-							L_95 = VirtualFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Exception::get_StackTrace() */, L_94);
+							L_95 = VirtualFuncInvoker0< String_t* >::Invoke(9 /* System.String System.Exception::get_StackTrace() */, L_94);
 							NullCheck(L_93);
 							ArrayElementTypeCheck (L_93, L_95);
 							(L_93)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)L_95);
@@ -14031,7 +14031,7 @@ IL_0303_1:
 					WebException_t106BE934ACC529D73F9EA01B0545487E8F6582C8* L_138 = V_13;
 					NullCheck(L_138);
 					String_t* L_139;
-					L_139 = VirtualFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Exception::get_StackTrace() */, L_138);
+					L_139 = VirtualFuncInvoker0< String_t* >::Invoke(9 /* System.String System.Exception::get_StackTrace() */, L_138);
 					NullCheck(L_137);
 					ArrayElementTypeCheck (L_137, L_139);
 					(L_137)->SetAt(static_cast<il2cpp_array_size_t>(3), (RuntimeObject*)L_139);

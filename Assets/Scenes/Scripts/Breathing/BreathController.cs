@@ -43,7 +43,8 @@ public class BreathController : MonoBehaviour
         _volume = _voice.voiceVolume;
         if (_canBreath == true)
         {
-            if (Time.time - lastTriggerTime > windowTime)
+            // avoid multiple triggers within windowTime
+            if (Time.time - lastTriggerTime > windowTime) 
             {
                 if (_volume > _threshold && !hasReachedThreshold)
                 {
@@ -66,8 +67,6 @@ public class BreathController : MonoBehaviour
                 }
             }
         }
-        
-
     }
 
 

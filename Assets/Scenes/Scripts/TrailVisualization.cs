@@ -1,35 +1,68 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Normal.Realtime;
 
 public class TrailVisualization : MonoBehaviour
 {
     public bool _canTrail = false;
-
+    private RealtimeAvatarManager _realtimeAvatarManager;
+    private Realtime _realtime;
     // Start is called before the first frame update
+    private void Awake()
+    {
+        _realtimeAvatarManager = GetComponent<RealtimeAvatarManager>();
+        
+    }
     void Start()
     {
         
+
     }
 
-    public void EnableTrail()
+    public void EnableLeftTrail()
     {
-
-        TrailRenderer tr = (TrailRenderer)FindObjectOfType(typeof(TrailRenderer));
-        if (tr)
+        if (_realtimeAvatarManager.localAvatar == null)
+            return;
+        TrailRenderer trL = _realtimeAvatarManager.localAvatar.GetComponentsInChildren<TrailRenderer>()[1];
+        if (trL)
         {
-            tr.enabled = true;
-        }
-        
+            trL.enabled = true;
+        }        
     }
 
-    public void DisableTrail()
+    public void DisableLeftTrail()
     {
-        TrailRenderer tr = (TrailRenderer)FindObjectOfType(typeof(TrailRenderer));
-        if (tr)
+        if (_realtimeAvatarManager.localAvatar == null)
+            return;
+        TrailRenderer trL = _realtimeAvatarManager.localAvatar.GetComponentsInChildren<TrailRenderer>()[1];
+        if (trL)
         {
-            tr.enabled = false;
+            trL.enabled = false;
         }
-        
     }
+
+
+    public void EnableRightTrail()
+    {
+        if (_realtimeAvatarManager.localAvatar == null)
+            return;
+        TrailRenderer trL = _realtimeAvatarManager.localAvatar.GetComponentsInChildren<TrailRenderer>()[0];
+        if (trL)
+        {
+            trL.enabled = true;
+        }
+    }
+
+    public void DisableRightTrail()
+    {
+        if (_realtimeAvatarManager.localAvatar == null)
+            return;
+        TrailRenderer trL = _realtimeAvatarManager.localAvatar.GetComponentsInChildren<TrailRenderer>()[0];
+        if (trL)
+        {
+            trL.enabled = false;
+        }
+    }
+
 }
